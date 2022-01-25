@@ -7,9 +7,9 @@ function win_demo.demo()
 
 
     --Add control button to the header
-    local close_btn = lvgl.win_add_btn(win, LV_SYMBOL_CLOSE);           --Add close button and use built-in close action
+    local close_btn = lvgl.win_add_btn(win, "LV_SYMBOL_CLOSE");           --Add close button and use built-in close action
     lvgl.obj_set_event_cb(close_btn, lvgl.win_close_event_cb);
-    lvgl.win_add_btn(win, LV_SYMBOL_SETTINGS);        --Add a setup button
+    lvgl.win_add_btn(win, "LV_SYMBOL_SETTINGS");        --Add a setup button
 
     --Add some dummy content
     local txt = lvgl.label_create(win, nil);
